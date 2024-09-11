@@ -6,11 +6,11 @@ from telegram import Update, Bot
 from telegram.ext import Application, MessageHandler, filters
 from urllib.parse import urljoin
 
-bot_token = "7121777128:AAFWq_9NufNjJZP2EuDwgQllvquVD9FWbLU"
-chat_id = "635017252"  # Вкажи правильний chat_id
+bot_token = ""
+chat_id = ""  # Вкажи правильний chat_id
 bot = Bot(token=bot_token)
 
-url = "https://uaserials.pro/288-simpsonyy.html"
+url = ""
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
@@ -18,7 +18,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 
 async def write_image():
     # тут вкажи якісь унікальні ознаки тої фотки
-    alt_ = "Сімпсони"
+    alt_ = ""
 
     images = soup.find_all("img", alt=alt_)
 

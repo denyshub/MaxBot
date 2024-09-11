@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import Application, MessageHandler, filters
 
 # Токен твого бота
-bot_token = "7121777128:AAFWq_9NufNjJZP2EuDwgQllvquVD9FWbLU"
+bot_token = ""
 
 
 async def get_chat_id(update: Update, context):

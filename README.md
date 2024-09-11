@@ -14,6 +14,7 @@
 
 2. **Get chat id**
 
+   - Find the line bot_token = 'YOUR_BOT_TOKEN' and replace 'YOUR_BOT_TOKEN' with your bot's token received from BotFather.
    - Run get_chat_id.py:
      ```bash
      python get_chat_id.py
